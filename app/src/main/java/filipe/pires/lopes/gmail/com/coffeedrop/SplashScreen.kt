@@ -8,9 +8,9 @@ class SplashScreen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        // whe do not need to give this view a Layout, We will simply aply a theme, its quicker and there is no random white screen uppp app load
+        // whe do not need to give this view a Layout, We will simply aply a theme, its quicker and there is no random white screen on app load
         //setContentView(R.layout.activity_splash_screen)
 
-        launchActivity<MapsActivity> {  }
+        launchActivity<NavigationActivity> {  }
     }
 }

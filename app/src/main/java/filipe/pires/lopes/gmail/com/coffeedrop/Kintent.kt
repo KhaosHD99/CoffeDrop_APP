@@ -1,8 +1,5 @@
 package filipe.pires.lopes.gmail.com.coffeedrop
 
-/**
- * Created by filipelopes on 08/12/2017.
- */
 import android.app.Activity
 import android.content.Context
 import android.content.Intent

@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashScreen">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toTopOf="parent"
+        tools:context=".LocationInfo" />
+
+    <TextView
+        android:id="@+id/locationName_LBL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Dummy Name"
+        android:textColor="@android:color/background_dark"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/map"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1,2,3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+
+            >
+
+            <TextView
+                android:id="@+id/txtspace"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:text=""
+                tools:layout_editor_absoluteX="25dp"
+                tools:layout_editor_absoluteY="205dp" />
+
+            <TextView
+                android:id="@+id/open_LBL"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="2"
+                android:gravity="center"
+                android:text="Open time"
+                android:textSize="24sp"
+                tools:layout_editor_absoluteX="25dp"
+                tools:layout_editor_absoluteY="205dp" />
+
+            <TextView
+                android:id="@+id/close_LBL"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="3"
+                android:gravity="center"
+                android:text="Close Time"
+                android:textSize="24sp"
+                tools:layout_editor_absoluteX="25dp"
+                tools:layout_editor_absoluteY="205dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/monday_LBL"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:gravity="center"
+                android:text="Monday"
+                android:textSize="24sp"
+                tools:layout_editor_absoluteX="25dp"
+                tools:layout_editor_absoluteY="205dp" />
+
+            <TextView
+                android:id="@+id/monday_open_LBL"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="2"
+                android:gravity="center"
+                android:text="Open time"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="25dp"
+                tools:layout_editor_absoluteY="205dp" />
+
+            <TextView
+                android:id="@+id/monday_close_LBL"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="3"
+                android:gravity="center"
+                android:text="Close Time"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="25dp"
+                tools:layout_editor_absoluteY="205dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tuesday_LBL"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:gravity="center"
+                android:text="Tuesday"
+                android:textSize="24sp"
+                tools:layout_editor_absoluteX="25dp"
+                tools:layout_editor_absoluteY="205dp" />
+
+            <TextView
+                android:id="@+id/tuesday_open_LBL"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="2"
+                android:gravity="center"
+                android:text="Open time"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="25dp"
+                tools:layout_editor_absoluteY="205dp" />
+
+            <TextView
+                android:id="@+id/tuesday_close_LBL"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="3"
+                android:gravity="center"
+                android:text="Close Time"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="25dp"
+                tools:layout_editor_absoluteY="205dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/wednesday_LBL"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:gravity="center"
+                android:text="Wednesday"
+                android:textSize="24sp"
+                tools:layout_editor_absoluteX="25dp"
+                tools:layout_editor_absoluteY="205dp" />
+
+            <TextView
+                android:id="@+id/wednesday_open_LBL"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="2"
+                android:gravity="center"
+                android:text="Open time"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="25dp"
+                tools:layout_editor_absoluteY="205dp" />
+
+            <TextView
+                android:id="@+id/wednesday_close_LBL"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="3"
+                android:gravity="center"
+                android:text="Close Time"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="25dp"
+                tools:layout_editor_absoluteY="205dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/thursday_LBL"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:gravity="center"
+                android:text="Thursday"
+                android:textSize="24sp"
+                tools:layout_editor_absoluteX="25dp"
+                tools:layout_editor_absoluteY="205dp" />
+
+            <TextView
+                android:id="@+id/thursday_open_LBL"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="2"
+                android:gravity="center"
+                android:text="Open time"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="25dp"
+                tools:layout_editor_absoluteY="205dp" />
+
+            <TextView
+                android:id="@+id/thursday_close_LBL"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="3"
+                android:gravity="center"
+                android:text="Close Time"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="25dp"
+                tools:layout_editor_absoluteY="205dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/friday_LBL"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:gravity="center"
+                android:text="Friday"
+                android:textSize="24sp"
+                tools:layout_editor_absoluteX="25dp"
+                tools:layout_editor_absoluteY="205dp" />
+
+            <TextView
+                android:id="@+id/friday_open_LBL"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="2"
+                android:gravity="center"
+                android:text="Open time"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="25dp"
+                tools:layout_editor_absoluteY="205dp" />
+
+            <TextView
+                android:id="@+id/friday_close_LBL"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="3"
+                android:gravity="center"
+                android:text="Close Time"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="25dp"
+                tools:layout_editor_absoluteY="205dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/saturday_LBL"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:gravity="center"
+                android:text="Saturday"
+                android:textSize="24sp"
+                tools:layout_editor_absoluteX="25dp"
+                tools:layout_editor_absoluteY="205dp" />
+
+            <TextView
+                android:id="@+id/saturday_open_LBL"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="2"
+                android:gravity="center"
+                android:text="Open time"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="25dp"
+                tools:layout_editor_absoluteY="205dp" />
+
+            <TextView
+                android:id="@+id/saturday_close_LBL"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="3"
+                android:gravity="center"
+                android:text="Close Time"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="25dp"
+                tools:layout_editor_absoluteY="205dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/sunday_LBL"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:gravity="center"
+                android:text="Sunday"
+                android:textSize="24sp"
+                tools:layout_editor_absoluteX="25dp"
+                tools:layout_editor_absoluteY="205dp" />
+
+            <TextView
+                android:id="@+id/sunday_open_LBL"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="2"
+                android:gravity="center"
+                android:text="Open time"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="25dp"
+                tools:layout_editor_absoluteY="205dp" />
+
+            <TextView
+                android:id="@+id/sunday_close_LBL"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="3"
+                android:gravity="center"
+                android:text="Close Time"
+                android:textSize="18sp"
+                tools:layout_editor_absoluteX="25dp"
+                tools:layout_editor_absoluteY="205dp" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="Squedule"
+        android:textColor="@android:color/background_dark"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/map" />
+
+    <Button
+        android:id="@+id/close_BTN"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:text="Close"
+        android:textColor="@android:color/holo_blue_dark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/distance_LBL"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="1dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+
+</android.support.constraint.ConstraintLayout>
